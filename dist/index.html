@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Empty project</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <template id="project-list">
+      <section id="project-section">
+        <h2></h2>
+        <button id="add-project-form">Add Project</button>
+        <ul></ul>
+      </section>
+    </template>
+
+    <template id="to-do-list">
+      <section id="to-do-section">
+        <button id="add-to-do">+</button>
+      </section>
+    </template>
+
+    <template id="project-category">
+      <li id="single-project">
+        <h2></h2>
+      </li>
+    </template>
+
+    <template id="project-form">
+      <form id="p-form" class="hidden">
+        <h2>New Project</h2>
+        <input id="form-input" type="text" placeholder="Project Title" />
+        <button id="add-project">Add</button>
+        <button id="cancel-project">Cancel</button>
+      </form>
+    </template>
+
+    <template id="to-do-form">
+      <form class="t-form hidden">
+        <button id="cancel-to-do">X</button>
+        <input id="title" type="text" placeholder="Title" />
+        <textarea id="description" placeholder="Description"></textarea>
+        <input id="date" type="date" />
+        <div>
+          <label for="Priority">Priority</label>
+          <select name="Priority" id="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <button id="edit">Edit</button>
+        <button id="submit">Add</button>
+      </form>
+    </template>
+    <div id="app"></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
